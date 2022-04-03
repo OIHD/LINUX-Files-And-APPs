@@ -1,31 +1,20 @@
+echo -
 echo - OIHD Quick Install -
 echo - 
-echo -  POPOS 22.04 B1
+echo - Hızlı kurulum basliyor
 echo -
-echo - -Kuruluma baslandi
-
-
-echo -APP - DEBLER Yetkilendiriliyor
-cd ~/app/debler/
-sudo chmod +x discord-0.0.17.deb
-sudo chmod +x gettext_0.21-4ubuntu3_amd64.deb
-sudo chmod +x peazip_8.4.0.LINUX.GTK2-1_amd64.deb
-sudo chmod +x plasticity_0.5.11_amd64.deb
-sudo chmod +x timeshift_20.11.1-1_amd64.deb
-sudo chmod +x dbus-tests_1.12.20-2ubuntu2_amd64.deb
-sudo chmod +x libncurses-dev_6.1+20181013-2+deb10u2_amd64.deb
-sudo chmod +x code_1.63.2-1639562499_amd64.deb
 
 
 echo -APP - DEBLER Kuruluyor
-sudo dpkg -i discord-0.0.17.deb
-sudo dpkg -i gettext_0.21-4ubuntu3_amd64.deb
-sudo dpkg -i peazip_8.4.0.LINUX.GTK2-1_amd64.deb
-sudo dpkg -i plasticity_0.5.11_amd64.deb
-sudo dpkg -i timeshift_20.11.1-1_amd64.deb
-sudo dpkg -i dbus-tests_1.12.20-2ubuntu2_amd64.deb
-sudo dpkg -i libncurses-dev_6.1+20181013-2+deb10u2_amd64.deb
-sudo dpkg -i code_1.63.2-1639562499_amd64.deb
+cd ~/app/debler/
+sudo dpkg -i discord*
+sudo dpkg -i gettext*
+sudo dpkg -i peazip*
+sudo dpkg -i plasticity*
+sudo dpkg -i timeshift*
+sudo dpkg -i dbus-tests*
+sudo dpkg -i libncurses-dev*
+sudo dpkg -i code*
 
 
 echo - saat fix
