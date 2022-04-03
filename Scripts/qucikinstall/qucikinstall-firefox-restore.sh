@@ -23,14 +23,14 @@ oihdxtwo=*.default
 
 
 cd /home/oihd/app
-cp -r abcdefgh.default-release /home/oihd/.mozilla/firefox/
-cp -r ijklmnop.default /home/oihd/.mozilla/firefox/
+oihdxtree=*.default-release
+oihdxfour=*.default
+cp -r $oihdxtree /home/oihd/.mozilla/firefox/
+cp -r $oihdxfour /home/oihd/.mozilla/firefox/
+
+
 cd /home/oihd/.mozilla/firefox/
-
-
-sudo rm -rf  /home/oihd/.mozilla/firefox/$oihdxone.default-release/
-sudo mv abcdefgh.default-release $oihdxone.default-release
-
-
-sudo rm -rf  /home/oihd/.mozilla/firefox/$oihdxtwo.default/
-sudo mv ijklmnop.default $oihdxtwo.default
+sudo rm -rf  /home/oihd/.mozilla/firefox/$oihdxone
+sudo mv $oihdxtree $oihdxone
+sudo rm -rf  /home/oihd/.mozilla/firefox/$oihdxtwo
+sudo mv $oihdxfour $oihdxtwo.default
