@@ -7,9 +7,8 @@ cd /home/oihd/.mozilla/firefox/
 sudo rm -rf  /home/oihd/.mozilla/firefox/*
 firefox
 read bekle
-ls -a
+echo *.default *.default-release
 read oihdxone oihdxtwo
-
 cd /home/oihd/app/zip/
 unzip firefox-backup.zip 
 sudo mv knql8af7.default $oihdxone
