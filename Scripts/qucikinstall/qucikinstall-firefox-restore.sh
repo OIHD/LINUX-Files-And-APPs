@@ -3,34 +3,22 @@ echo - OIHD Quick Install -
 echo - 
 echo - Hızlı Firefox kurtarma basliyor
 echo -
-
-
-cd /home/oihd/app
-unzip firefox-backup.zip 
-cd /home/oihd/.mozilla/firefox
+cd /home/oihd/.mozilla/firefox/
 sudo rm -rf  /home/oihd/.mozilla/firefox/*
 firefox
+read bekle
+ls -a
+read oihdxone oihdxtwo
 
-
-echo ----------------------------------
-echo - enter tuşuna bas
-echo ----------------------------------
-read oihdxrandom
-
-
-oihdxone=*.default-release
-oihdxtwo=*.default
-
-
-cd /home/oihd/app
-oihdxtree=*.default-release
-oihdxfour=*.default
-cp -r $oihdxtree /home/oihd/.mozilla/firefox/
-cp -r $oihdxfour /home/oihd/.mozilla/firefox/
-
-
+cd /home/oihd/app/zip/
+unzip firefox-backup.zip 
+sudo mv knql8af7.default $oihdxone
+sudo mv 43r0gqqz.default-release $oihdxtwo
 cd /home/oihd/.mozilla/firefox/
 sudo rm -rf  /home/oihd/.mozilla/firefox/$oihdxone
-sudo mv $oihdxtree $oihdxone
+cd /home/oihd/.mozilla/firefox/
 sudo rm -rf  /home/oihd/.mozilla/firefox/$oihdxtwo
-sudo mv $oihdxfour $oihdxtwo
+cd /home/oihd/app/zip/
+cp -r $oihdxone /home/oihd/.mozilla/firefox/
+cd /home/oihd/app/zip/
+cp -r $oihdxtwo /home/oihd/.mozilla/firefox/
