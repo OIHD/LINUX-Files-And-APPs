@@ -2,11 +2,11 @@
 FILEPATH="$HOME/app/zip"
 MOZILLAPATH="$HOME/.mozilla/firefox"
 echo "-"
-echo "- OIHD Quick Install -"
+echo "- OIHD's Quick Install Kit -"
 echo "-" 
-echo "- Hızlı Firefox kurtarma basliyor"
+echo "- Fast Firefox recovery"
 echo "-"
-echo "- Katkilari icin SuperDozer e tesekkurler"
+echo "- Thanks SuperDozer for their contribution."
 echo "-"
 rm -rf "$MOZILLAPATH/"*
 nohup firefox &>/dev/null &
