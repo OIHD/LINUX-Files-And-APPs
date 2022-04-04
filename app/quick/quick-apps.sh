@@ -1,12 +1,16 @@
-echo -
-echo - OIHD Quick Install -
-echo - 
-echo - Hızlı kurulum basliyor
-echo -
-
-
-echo -APP - DEBLER Kuruluyor
-cd ~/app/debler/
+#!/bin/bash
+ICOFOLDER="$HOME/app/icon/"
+APPFOLDER="$HOME/app/"
+ZIPFOLDER="$HOME/app/zip/"
+echo "-"
+echo "- OIHD's Quick Install Kit -"
+echo "-" 
+echo "- Fast startup"
+echo "-"
+echo "-"
+echo "-"
+echo "- DEB - Installing"
+cd $APPFOLDER/debs/
 sudo dpkg -i discord*
 sudo dpkg -i gettext*
 sudo dpkg -i peazip*
@@ -15,46 +19,30 @@ sudo dpkg -i timeshift*
 sudo dpkg -i dbus-tests*
 sudo dpkg -i libncurses-dev*
 sudo dpkg -i code*
-
-
-echo - saat fix
+echo "- 24 Hour time fix"
 gsettings set org.gnome.desktop.interface clock-format '24h'
-
-
-echo - blur my shell kuruluyor 
-cd /home/oihd/app
+echo "- blur my shell - Installing"
+cd $ZIPFOLDER
 unzip blur-my-shell.zip
-cd /home/oihd/app/blur-my-shell
+cd $ZIPFOLDER/blur-my-shell
 make install
-
-
-echo - vim kuruluyor
-cd /home/oihd/app
+echo "- vim - Installing"
+cd $ZIPFOLDER
 unzip vim-yedek.zip 
-cd /home/oihd/app/vim/src
+cd $ZIPFOLDER/vim/src
 make
 sudo make install
-
-
-echo - neofetch kuruluyor
-cd /home/oihd/app
+echo "- neofetch - Installing"
+cd $ZIPFOLDER
 unzip neofetch-7.1.0.zip
-cd /home/oihd/app/neofetch-7.1.0
+cd $ZIPFOLDER/neofetch-7.1.0
 sudo make install
-
-
-echo - iconlar ekleniyor 
-cd /home/oihd/app/icon/
+echo "- icons - Installing "
+cd $ICOFOLDER
 sudo cp balena.desktop /usr/share/applications/
-cd /home/oihd/app/icon/
 sudo cp blender.desktop /usr/share/applications/
-cd /home/oihd/app/icon/
 sudo cp godot.desktop /usr/share/applications/
-cd /home/oihd/app/icon/
 sudo cp godot4.desktop /usr/share/applications/
-cd /home/oihd/app/icon/
 sudo cp inkscape.desktop /usr/share/applications/
-cd /home/oihd/app/icon/
 sudo cp keepassxc.desktop /usr/share/applications/
-cd /home/oihd/app/icon/
 sudo cp krita.desktop /usr/share/applications/
