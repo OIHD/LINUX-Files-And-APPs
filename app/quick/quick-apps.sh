@@ -11,13 +11,20 @@ echo "-"
 echo "-"
 echo "- DEB - Installing"
 cd $APPFOLDER/debs/
-sudo dpkg -i discord*
 sudo dpkg -i gettext*
+sudo dpkg -i dbus-tests*
+sudo dpkg -i libncurses-dev*
+sudo dpkg -i libdbusmenu*
+sudo dpkg -i libdbus*
+sudo dpkg -i dbus-tests*
+sudo dpkg -i libc*
+sudo dpkg -i libappindicator*
+sudo dpkg -i libgconf*
+sudo dpkg -i libncurses*
+sudo dpkg -i discord*
 sudo dpkg -i peazip*
 sudo dpkg -i plasticity*
 sudo dpkg -i timeshift*
-sudo dpkg -i dbus-tests*
-sudo dpkg -i libncurses-dev*
 sudo dpkg -i code*
 echo "- 24 Hour time fix"
 gsettings set org.gnome.desktop.interface clock-format '24h'
