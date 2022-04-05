@@ -12,15 +12,7 @@ echo "-"
 echo "- DEB - Installing"
 cd $APPFOLDER/debs/
 sudo dpkg -i gettext*
-sudo dpkg -i dbus-tests*
-sudo dpkg -i libncurses-dev*
-sudo dpkg -i libdbusmenu*
-sudo dpkg -i libdbus*
-sudo dpkg -i dbus-tests*
-sudo dpkg -i libc*
 sudo dpkg -i libappindicator*
-sudo dpkg -i libgconf*
-sudo dpkg -i libncurses*
 sudo dpkg -i discord*
 sudo dpkg -i peazip*
 sudo dpkg -i plasticity*
