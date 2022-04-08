@@ -11,6 +11,7 @@ echo "-"
 echo "-"
 echo "- DEB - Installing"
 cd $APPFOLDER/debs/
+sudo dpkg -i libc-ares*
 sudo dpkg -i gettext*
 sudo dpkg -i libappindicator*
 sudo dpkg -i discord*
@@ -36,6 +37,21 @@ cd $ZIPFOLDER
 unzip neofetch-7.1.0.zip
 cd $ZIPFOLDER/neofetch-7.1.0
 sudo make install
+echo "- Blender - Installing"
+cd $ZIPFOLDER
+tar -xf blender-3.1.2-linux-x64.tar.xz -C $APPFOLDER
+cd $APPFOLDER
+mv blender-3.1.2-linux-x64 blender
+echo "- Python - Installing"
+cd $ZIPFOLDER
+tar -xf Python-3.10.4.tar.xz -C $APPFOLDER
+cd $APPFOLDER
+mv Python-3.10.4 python
+cd python
+sudo ./configure --enable-optimizations
+echo "- Godot - Installing"
+cd $ZIPFOLDER
+tar -xf godot.tar.xz -C $APPFOLDER
 echo "- icons - Installing "
 cd $ICOFOLDER
 sudo cp balena.desktop /usr/share/applications/
