@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Keepassxc
+Comment=Bu bir sifreleme uygulamasidir
+Exec=/home/oihd/app/KeePassXC-2.6.6-x86_64.AppImage
+Icon=keepassx
+Terminal=false
+Type=Application
+Categories=Utility;Development;
