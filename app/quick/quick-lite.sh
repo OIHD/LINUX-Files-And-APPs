@@ -12,17 +12,20 @@ sleep 1
 echo -e "- ${RED}Starting"
 echo -e "${NC}-"
 cd $QUICKFOLDER
-chmod +x quick-apps.sh
-chmod +x quick-firefox-restore.sh
-chmod +x quick-lite.sh
+chmod +x quick-apps.sh quick-firefox-restore.sh quick-lite.sh quick-theme-light.sh
 echo -e "- ${RED}APPs installing"
 echo -e "${NC}-"
-sh quick-apps.sh
 sleep 2
+sh quick-apps.sh
+echo -e "- ${RED}Theme installing"
+echo -e "${NC}-"
+sleep 2
+sh quick-theme-light.sh
 echo -e "- ${RED}Firefox installing"
 echo -e "${NC}-"
-sh quick-firefox-restore.sh
 sleep 2
+sh quick-firefox-restore.sh
+sudo apt --fix-broken install
 echo -e "- ${RED}Complete - Press enter to exit "
 echo -e "${NC}-"
 read goodbyemyfriend
