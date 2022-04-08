@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Godot 4
+Comment=Acik kaynak oyun gelistirme programi
+Exec=/home/oihd/app/godot/godot4/godot4
+Path=/home/oihd/app/godot/godot4/
+Icon=applications-games
+Terminal=true
+Type=Application
+Categories=Utility;Development;
