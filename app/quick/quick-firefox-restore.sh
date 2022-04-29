@@ -1,13 +1,9 @@
 #!/bin/bash
 FILEPATH="$HOME/app/zip"
 MOZILLAPATH="$HOME/.mozilla/firefox"
-echo "-"
 echo "- OIHD's Quick Install Kit -"
-echo "-" 
 echo "- Fast Firefox recovery"
-echo "-"
 echo "- Thanks SuperDozer for their contribution."
-echo "-"
 rm -rf "$MOZILLAPATH/"*
 nohup firefox &>/dev/null &
 sleep 2
@@ -22,3 +18,5 @@ rm -rf $MOZILLAPATH/$DEFAULTFILE
 rm -rf $MOZILLAPATH/$DEFAULTRELEASEFILE
 mv "$FILEPATH/Firefox Backup/"*\.default $MOZILLAPATH/$DEFAULTFILE
 mv "$FILEPATH/Firefox Backup/"*\.default-release $MOZILLAPATH/$DEFAULTRELEASEFILE
+
+
