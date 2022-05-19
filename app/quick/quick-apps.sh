@@ -3,6 +3,12 @@ ICOFOLDER="$HOME/app/icon/"
 APPFOLDER="$HOME/app/"
 ZIPFOLDER="$HOME/app/zip/"
 echo "- OIHD's Quick Install Kit -"
+echo "- REMOVING - system apps "
+sudo apt-get remove --purge libreoffice*
+sudo apt-get clean
+sudo apt-get autoremove
+echo "- UPDATE - system apps "
+sudo apt-get upgrade
 echo "- DEB - Installing"
 cd $APPFOLDER/debs/
 sudo dpkg -i libncurses*
@@ -14,14 +20,27 @@ sudo dpkg -i peazip*
 sudo dpkg -i plasticity*
 sudo dpkg -i timeshift*
 sudo dpkg -i code*
+sudo dpkg -i steam*
 echo "- PERMS - Installing"
 cd $APPFOLDER/appimage/
 chmod +x krita*
 chmod +x KeePass*
 chmod +x Inkscape*
 chmod +x MyPaint*
+chmod +x LibreOffice*
 echo "- 24 Hour time fix"
 gsettings set org.gnome.desktop.interface clock-format '24h'
+gsettings set org.gnome.desktop.interface gtk-theme Pop
+gsettings set org.gnome.desktop.wm.preferences theme Pop
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+gsettings list-recursively | grep location
+gsettings set org.gnome.system.location enabled true
 echo "- blur my shell - Installing"
 cd $HOME/.local/share/gnome-shell
 mkdir extensions
@@ -45,9 +64,6 @@ cd $ZIPFOLDER
 tar -xf blender-3.1.2-linux-x64.tar.xz -C $APPFOLDER
 cd $APPFOLDER
 mv blender-3.1.2-linux-x64 blender
-echo "- Godot - Installing"
-cd $ZIPFOLDER
-tar -xf godot.tar.xz -C $APPFOLDER
 echo "- GIMP - Installing"
 cd $APPFOLDER/appimage/
 chmod +x GIMP_App*
@@ -70,6 +86,8 @@ sudo cp inkscape.desktop /usr/share/applications/
 sudo cp keepassxc.desktop /usr/share/applications/
 sudo cp krita.desktop /usr/share/applications/
 sudo cp mypaint.desktop /usr/share/applications/
+sudo cp libreoffice.desktop /usr/share/applications/
+sudo cp flax.desktop /usr/share/applications/
 echo "- EXTENSIONS - Installing "
 killall -3 gnome-shell
 sleep 10
