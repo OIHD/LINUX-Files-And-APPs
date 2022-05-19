@@ -32,6 +32,7 @@ echo "- 24 Hour time fix"
 gsettings set org.gnome.desktop.interface clock-format '24h'
 gsettings set org.gnome.desktop.interface gtk-theme Pop
 gsettings set org.gnome.desktop.wm.preferences theme Pop
+gsettings set org.gnome.desktop.interface show-battery-percentage true
 gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
 gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
 gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
@@ -88,6 +89,12 @@ sudo cp krita.desktop /usr/share/applications/
 sudo cp mypaint.desktop /usr/share/applications/
 sudo cp libreoffice.desktop /usr/share/applications/
 sudo cp flax.desktop /usr/share/applications/
+echo "- FLAX SH FILES - Installing "
+cd $HOME/app/quick/flax
+sudo cp flax.sh $HOME
+sudo cp geciciflax.sh $HOME
+sudo cp gitflax.sh $HOME
+sudo cp hgitflax.sh $HOME
 echo "- EXTENSIONS - Installing "
 killall -3 gnome-shell
 sleep 10
