@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Flax Engine
+Comment=Bu bir oyun motoru uygulamasidir
+Exec=/home/oihd/app/flaxengine/FlaxEditorLinux/Binaries/Editor/Linux/Development/FlaxEditor
+Path=/home/oihd/app/flaxengine
+Icon=Flax
+Terminal=true
+Type=Application
+Categories=Utility;Development;
