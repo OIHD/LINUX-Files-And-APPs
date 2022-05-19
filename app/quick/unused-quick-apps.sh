@@ -17,3 +17,10 @@ echo -e "- ${RED}Theme installing"
 echo -e "${NC}-"
 sleep 2
 sh quick-theme-light.sh
+
+
+
+
+echo "- Godot - Installing"
+cd $ZIPFOLDER
+tar -xf godot.tar.xz -C $APPFOLDER
