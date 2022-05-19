@@ -24,3 +24,8 @@ sh quick-theme-light.sh
 echo "- Godot - Installing"
 cd $ZIPFOLDER
 tar -xf godot.tar.xz -C $APPFOLDER
+
+
+cd gnome-shell-extension-gsconnect/
+meson _build .
+ninja -C _build install-zip
