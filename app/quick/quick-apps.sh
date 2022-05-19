@@ -91,10 +91,10 @@ sudo cp libreoffice.desktop /usr/share/applications/
 sudo cp flax.desktop /usr/share/applications/
 echo "- FLAX SH FILES - Installing "
 cd $HOME/app/quick/flax
-sudo cp flax.sh $HOME
-sudo cp geciciflax.sh $HOME
-sudo cp gitflax.sh $HOME
-sudo cp hgitflax.sh $HOME
+cp flax.sh $HOME
+cp geciciflax.sh $HOME
+cp gitflax.sh $HOME
+cp hgitflax.sh $HOME
 echo "- EXTENSIONS - Installing "
 killall -3 gnome-shell
 sleep 10
