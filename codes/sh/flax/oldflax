@@ -1,0 +1,5 @@
+cd $HOME/app/flaxengine
+rm -rf FlaxEditorLinux
+unzip FlaxEditorLinux.zip -d $HOME/app/flaxengine/FlaxEditorLinux
+cd $HOME/app/flaxengine/FlaxEditorLinux/Binaries/Editor/Linux/Development
+./FlaxEditor -project "/home/oihd/app/flaxengine/flaxprojeler/gitproje/unnamed/proje.flaxproj" -std -nvidia
