@@ -26,6 +26,11 @@ cd $ZIPFOLDER
 tar -xf godot.tar.xz -C $APPFOLDER
 
 
+sudo apt install meson 
+cd $HOME/app/zip/gnome-extensions
+cp gnome-shell-extension-gsconnect.zip $HOME
+cd $HOME
+unzip gnome-shell-extension-gsconnect.zip
 cd gnome-shell-extension-gsconnect/
 meson _build .
 ninja -C _build install-zip
