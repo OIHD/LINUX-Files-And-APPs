@@ -21,6 +21,7 @@ sudo dpkg -i plasticity*
 sudo dpkg -i timeshift*
 sudo dpkg -i code*
 sudo dpkg -i steam*
+sudo dpkg -i zim*
 echo "- PERMS - Installing"
 cd $APPFOLDER/appimage/
 chmod +x krita*
@@ -28,6 +29,7 @@ chmod +x KeePass*
 chmod +x Inkscape*
 chmod +x MyPaint*
 chmod +x LibreOffice*
+chmod +x kdenlive*
 echo "- 24 Hour time fix"
 gsettings set org.gnome.desktop.interface clock-format '24h'
 gsettings set org.gnome.desktop.interface gtk-theme Pop
@@ -95,6 +97,11 @@ cp flax.sh $HOME
 cp geciciflax.sh $HOME
 cp gitflax.sh $HOME
 cp hgitflax.sh $HOME
+cd $HOME
+chmod +x geciciflax.sh
+chmod +x flax.sh
+chmod +x gitflax.sh
+chmod +x hgitflax.sh
 echo "- EXTENSIONS - Installing "
 killall -3 gnome-shell
 sleep 10
