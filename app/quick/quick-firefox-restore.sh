@@ -20,3 +20,4 @@ mv "$FILEPATH/Firefox Backup/"*\.default $MOZILLAPATH/$DEFAULTFILE
 mv "$FILEPATH/Firefox Backup/"*\.default-release $MOZILLAPATH/$DEFAULTRELEASEFILE
 
 
+
