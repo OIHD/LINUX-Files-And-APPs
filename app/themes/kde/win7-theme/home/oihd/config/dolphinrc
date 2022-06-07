@@ -1,0 +1,44 @@
+MenuBar=Disabled
+
+[CompactMode]
+FontWeight=50
+IconSize=48
+
+[DetailsMode]
+FontWeight=50
+IconSize=48
+PreviewSize=16
+
+[General]
+ShowSpaceInfo=false
+ShowZoomSlider=false
+Version=201
+ViewPropsTimestamp=2022,6,6,22,41,36.404
+
+[IconsMode]
+FontWeight=50
+IconSize=48
+PreviewSize=80
+
+[KFileDialog Settings]
+Recent Files[$e]=clean.ico,file:$HOME/Pictures/wpps/clean.ico
+Recent URLs[$e]=file:$HOME/Pictures/wpps/,file:$HOME/
+iconViewIconSize=64
+
+[KPropertiesDialog]
+eDP-1 Height 1920x1080=616
+eDP-1 Width 1920x1080=438
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+eDP-1 Height 1920x1080=517
+eDP-1 Width 1920x1080=866
+eDP-1 XPosition 1920x1080=732
+eDP-1 YPosition 1920x1080=131
+
+[PlacesPanel]
+IconSize=16
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs,webarchivethumbnail

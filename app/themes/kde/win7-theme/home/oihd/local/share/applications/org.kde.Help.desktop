@@ -1,0 +1,24 @@
+[Desktop Entry]
+Categories=Qt;KDE;Core;
+Comment[en_US]=Browse and search documentation
+Comment=Browse and search documentation
+Exec=khelpcenter %u
+GenericName[en_US]=Help Center
+GenericName=Help Center
+Icon=goa-account
+MimeType=
+Name[en_US]=\s
+Name=\s
+NoDisplay=false
+OnlyShowIn=KDE;
+Path=
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=org.kde.Help
+X-DBUS-StartupType=
+X-DocPath=khelpcenter/index.html
+X-KDE-SubstituteUID=false
+X-KDE-Username=

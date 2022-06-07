@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+GenericName=
+Icon=org.gnome.Shell.Extensions-symbolic
+Name=Office
+SortOrder=koshell.desktop,kword.desktop,kspread.desktop,kpresenter.desktop
+Type=Directory

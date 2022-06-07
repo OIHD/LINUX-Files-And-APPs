@@ -1,0 +1,6 @@
+# Home - oihd //
+
+config - .config
+kde - .kde
+local - .local
+#
