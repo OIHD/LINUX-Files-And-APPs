@@ -21,7 +21,7 @@ immutability=1
 plugin=org.kde.plasma.icon
 
 [Containments][1][Applets][34][Configuration]
-PreloadWeight=26
+PreloadWeight=0
 localPath=/home/oihd/.local/share/plasma_icons/org.kde.dolphin.desktop
 url=file:///usr/share/applications/org.kde.dolphin.desktop
 
@@ -30,7 +30,7 @@ immutability=1
 plugin=org.kde.plasma.analogclock
 
 [Containments][1][Applets][35][Configuration]
-PreloadWeight=69
+PreloadWeight=37
 
 [Containments][1][Applets][35][Configuration][ConfigDialog]
 DialogHeight=540
@@ -44,6 +44,9 @@ immutability=1
 plugin=org.kde.plasma.trash
 
 [Containments][1][Applets][37][Configuration]
+PreloadWeight=2
+
+[Containments][1][Applets][4][Configuration]
 PreloadWeight=34
 
 [Containments][1][ConfigDialog]
@@ -88,7 +91,7 @@ immutability=1
 plugin=org.kde.plasma.kicker
 
 [Containments][2][Applets][33][Configuration]
-PreloadWeight=97
+PreloadWeight=92
 
 [Containments][2][Applets][33][Configuration][ConfigDialog]
 DialogHeight=540
@@ -104,27 +107,20 @@ useCustomButtonImage=true
 [Containments][2][Applets][33][Shortcuts]
 global=Alt+F1
 
-[Containments][2][Applets][4]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][2][Applets][4][Configuration]
-PreloadWeight=0
-
-[Containments][2][Applets][5]
+[Containments][2][Applets][40]
 immutability=1
 plugin=org.kde.plasma.icontasks
 
-[Containments][2][Applets][5][Configuration]
-PreloadWeight=0
+[Containments][2][Applets][40][Configuration]
+PreloadWeight=18
 
-[Containments][2][Applets][5][Configuration][ConfigDialog]
+[Containments][2][Applets][40][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][2][Applets][5][Configuration][General]
+[Containments][2][Applets][40][Configuration][General]
 indicateAudioStreams=false
-launchers=applications:org.kde.dolphin-2.desktop,applications:firefox.desktop
+launchers=preferred://filemanager,applications:firefox.desktop,file:///usr/share/applications/discord.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -138,7 +134,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=84
+PreloadWeight=92
 SystrayContainmentId=8
 
 [Containments][2][ConfigDialog]
@@ -149,7 +145,22 @@ DialogWidth=1920
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=33;4;5;6;7;29
+AppletOrder=33;40;6;7;29
+
+[Containments][5][Applets][19][Configuration]
+PreloadWeight=42
+
+[Containments][5][Applets][20][Configuration]
+PreloadWeight=42
+
+[Containments][5][Applets][6][Configuration]
+PreloadWeight=92
+
+[Containments][5][Applets][7][Configuration]
+PreloadWeight=42
+
+[Containments][5][Applets][8][Configuration]
+PreloadWeight=47
 
 [Containments][8]
 activityId=
@@ -165,7 +176,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][8][Applets][10][Configuration]
-PreloadWeight=0
+PreloadWeight=4
 
 [Containments][8][Applets][11]
 immutability=1
@@ -179,7 +190,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][12][Configuration]
-PreloadWeight=0
+PreloadWeight=7
 
 [Containments][8][Applets][12][Configuration][ConfigDialog]
 DialogHeight=540
@@ -203,7 +214,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][16][Configuration]
-PreloadWeight=34
+PreloadWeight=22
 
 [Containments][8][Applets][17]
 immutability=1
@@ -255,7 +266,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][9][Configuration]
-PreloadWeight=11
+PreloadWeight=9
 
 [Containments][8][ConfigDialog]
 DialogHeight=540
@@ -266,9 +277,48 @@ PreloadWeight=0
 
 [Containments][8][General]
 extraItems=org.kde.plasma.notifications,org.kde.kdeconnect,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kupapplet,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod
-hiddenItems=discord1,org.kde.plasma.battery,org.kde.plasma.bluetooth,steam,KOrganizer Reminder Daemon,org.kde.plasma.mediacontroller,Plasma_microphone
+hiddenItems=discord1,org.kde.plasma.battery,org.kde.plasma.bluetooth,steam,KOrganizer Reminder Daemon,org.kde.plasma.mediacontroller,Plasma_microphone,Discover Notifier_org.kde.DiscoverNotifier,qBittorrent
 knownItems=org.kde.plasma.notifications,org.kde.kdeconnect,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.nightcolorcontrol,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.kupapplet,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod
 shownItems=org.kde.plasma.clipboard,org.kde.plasma.notifications
+
+[Containments][9][Applets][10][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][11][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][12][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][13][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][14][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][15][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][16][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][17][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][18][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][21][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][22][Configuration]
+PreloadWeight=42
+
+[Containments][9][Applets][23][Configuration]
+PreloadWeight=42
+
+[Containments][9][Configuration]
+PreloadWeight=42
 
 [ScreenMapping]
 itemsOnDisabledScreens=
