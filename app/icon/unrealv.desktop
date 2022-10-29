@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Unreal Engine
+Comment=Best app for play with best waifus
+Exec=sh unreal.sh
+Path=/home/oihd/
+Icon=/home/oihd/app/unreal/Engine/Content/Splash/IconDefault.bmp
+Terminal=false
+Type=Application
+Categories=Utility;Development;
