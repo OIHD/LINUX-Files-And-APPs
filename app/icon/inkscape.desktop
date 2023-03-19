@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=inkscape
-Comment=Bu bir tasarim uygulamasidir
-Exec=/home/oihd/app/appimage/Inkscape-0a00cf5-x86_64.AppImage
-Icon=inkscape
-Terminal=false
-Type=Application
-Categories=Utility;Development;

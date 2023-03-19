@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Krita
-Comment=Bu bir tasarim uygulamasidir
-Exec=/home/oihd/app/appimage/krita-5.0.2-x86_64.appimage
-Icon=krita
-Terminal=false
-Type=Application
-Categories=Utility;Development;

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=LibreOffice
-Comment=Bu bir ofis uygulamasidir
-Exec=/home/oihd/app/appimage/LibreOffice-fresh.full-x86_64.AppImage
-Icon=libreoffice
-Terminal=false
-Type=Application
-Categories=Utility;Development;

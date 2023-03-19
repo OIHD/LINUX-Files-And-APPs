@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=BalenaEtcher
-Comment=Bu bir disk yazma uygulamasidir
-Exec=/home/oihd/app/appimage/balenaEtcher-1.7.8-x64.AppImage
-Icon=appimagekit-balena-etcher-electron
-Terminal=false
-Type=Application
-Categories=Utility;Development;
