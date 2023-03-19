@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=VScode
+Comment=Best app for coding best waifus
+Exec=/home/oihd/app/vscode/code
+Path=/home/oihd/app/vscode/
+Icon=code
+Terminal=false
+Type=Application
+Categories=Utility;Development;

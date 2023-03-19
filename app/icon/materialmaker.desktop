@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Material Maker
+Comment=Best app for waifus dress patterns
+Exec=/home/oihd/app/bin/materialmaker/material_maker.x86_64
+Path=/home/oihd/app/
+Icon=/home/oihd/app/icon/content/mm.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Blender
+Comment=Best app for modelling best waifus
+Exec=/home/oihd/app/bin/blender/blender
+Path=/home/oihd/app/bin/blender/
+Icon=/home/oihd/app/bin/blender/blender.svg
+Terminal=false
+Type=Application
+Categories=Utility;Development;

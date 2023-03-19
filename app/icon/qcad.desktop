@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=QCAD
+GenericName=CAD Software
+Comment=A professional 2D CAD System
+Exec="/home/oihd/app/bin/qcad/qcad" %F
+Terminal=false
+X-MultipleArgs=true
+Type=Application
+Icon=/home/oihd/app/bin/qcad/qcad_icon.png
+Categories=Graphics;VectorGraphics;Engineering;Construction;2DGraphics;Science;
+MimeType=application/dxf;application/dwg;image/vnd.dxf;image/vnd.dwg;image/x-dwg 

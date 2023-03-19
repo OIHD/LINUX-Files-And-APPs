@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Discord
+Comment=Best app for talk to best waifus
+Exec=/home/oihd/app/discord/Discord
+Path=/home/oihd/app/discord/
+Icon=discord
+Terminal=false
+Type=Application
+Categories=Utility;Development;

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Armor Paint
+Comment=Best app for waifus dress patterns
+Exec=/home/oihd/app/bin/ArmorPaint/ArmorPaint
+Path=/home/oihd/app/
+Icon=/home/oihd/app/icon/content/ap.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;
